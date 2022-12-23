@@ -1,0 +1,178 @@
+:root {
+    --primary-dark: #333;
+    --secondary-dark: #444;
+    --primary-light: #eee;
+    --secondary-light: #ddd;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font-size: 16px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    width: 100vw;
+    min-height: 100vh;
+}
+
+#navbar button:hover,
+#navbar button:active,
+#navbar button:focus {
+    background-color: var(--primary-light);
+}
+
+/* HEADER */
+
+#header {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 20px;
+
+    width: 100vw;
+    height: 120px;
+    padding: 30px;
+
+    background-color: var(--primary-dark);
+}
+
+#header img {
+    width: 60px;
+    height: auto;
+}
+
+#header p {
+    font-size: 30px;
+    color: white;
+}
+
+/* MAIN */
+
+#main {
+    display: flex;
+    
+    width: 100vw;
+    height: calc(100vh - 60px - 120px);
+}
+
+/* navbar */ 
+
+#navbar {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    width: 250px;
+    height: calc(100vh - 60px - 120px);
+    padding: 30px;
+
+    background-color: var(--secondary-light);
+}
+
+#tasks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+#tasks button,
+#projects button {
+    padding: 10px;
+
+    font-size: 20px;
+    background-color: var(--secondary-light);
+    text-align: left;
+    border-radius: 20px;
+}
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+#projects p {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* content */ 
+
+#content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    width: calc(100vw - 250px);
+    height: calc(100vh - 60px - 120px);
+    padding: 30px 15%;
+
+    background-color: var(--primary-light);
+}
+
+.addTaskBtn {
+    background-color: var(--secondary-dark);
+    color: var(--primary-light);
+    font-size: 20px;
+    padding: 5px 10px;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+.tasksComponent {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.blankContent {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tasksDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.singleTaskMainDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: auto;
+
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 5px 10px;
+}
+
+.singleTaskMainDiv > div {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+/* FOOTER */ 
+
+#footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 60px;
+    width: 100vw;
+
+    background-color: var(--primary-dark);
+    color: white;
+}
